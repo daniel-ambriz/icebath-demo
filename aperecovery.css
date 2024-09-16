@@ -1,0 +1,452 @@
+/* CSS Page contains both Bootstrap media queries and custom media queries. Please use Bootrtap media queries always if possible */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Open+Sans:wght@500;600&display=swap');
+
+/* ********** Sitewide Styles ********** */
+
+*{
+    box-sizing:border-box;
+    font-family:'Open Sans', sans-serif;
+    font-weight:600;
+}
+
+body{
+    background-color:white;
+}
+
+.titleFont{
+  font-family:'Inter';
+  font-weight:500;
+}
+
+.flex-container{
+  display:flex;
+  flex-wrap:wrap;
+  /* border:1px solid green; */
+}
+
+.flex-item-left{
+  flex:100%;
+}
+
+.flex-item-right{
+  flex:100%;
+}
+
+.hero-flex-item-left{
+  flex:100%;
+  /* border:1px solid purple; */
+}
+
+.hero-flex-item-right{
+  flex:100%;
+  /* border:1px solid yellow; */
+}
+
+.centeredStuff{
+  text-align:center;
+}
+
+.blackDiv{
+  background-color:black;
+  color:white;
+}
+
+.iconCustomize{
+  height:24px;
+}
+
+.number{
+  text-decoration:none;
+}
+
+nav{
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.logoHeader{
+    height:63px;
+    /* margin-left:15px; */
+}
+
+ul > li > a{
+    color:black !important;
+}
+
+.nowrap{
+  white-space:nowrap;
+}
+
+.nav-bottom{
+  box-shadow:0px 2px 3px #e7e9eb; 
+}
+
+
+/* ********** End Sitewide Styles ********** */
+
+/* ********** Homepage Styles ********** */
+
+/* ***** Hero Div ***** */
+
+.homeDiv1{
+  margin-top:70px;
+}
+
+.img1{
+  width:100%;
+}
+
+.btn{
+  font-weight:600;
+  border-radius:2px;
+}
+
+.button1{
+  background: hsla(4, 84%, 49%, 1);
+  background: linear-gradient(90deg, hsla(4, 84%, 49%, 1) 0%, hsla(37, 89%, 52%, 1) 100%);
+  color:black;
+}
+
+.button2{
+  color:black;
+  background-color:#EB5516;
+}
+
+.button2:hover{
+  background: hsla(4, 84%, 49%, 1);
+  background: linear-gradient(90deg, hsla(4, 84%, 49%, 1) 0%, hsla(37, 89%, 52%, 1) 100%);
+  
+}
+/* ***** End Hero Div ***** */
+
+/* ***** Services Div ***** */
+h2{
+  font-weight:500;
+}
+
+.servicesFluid{
+  background-color:#E8EEF4;
+  border-radius:0px 0px 80px 80px;
+  margin-top:170px;
+}
+
+.servicesSection{
+  padding-bottom:35px;
+}
+
+
+.featuredServices{
+  text-align:center;
+  font-size:28px;
+  padding-top:10px;
+}
+
+.col-12{
+  padding:0;
+  text-align:center;
+}
+
+.col-12 img{
+  max-height:350px;
+}
+
+.sImage{
+  border-radius:5px;
+}
+
+.label{
+  margin-top:-27px;
+  font-size:20px;
+  margin-bottom:-3px;
+}
+/* ***** End Services Div ***** */
+
+/* ***** Reviews Div ***** */
+.reviewsShot{
+  margin-top:150px;
+}
+
+.reviewsShotInner{
+  max-width:202px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.reviewsImage{
+  width:200px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+/* ***** End Reviews Div ***** */
+
+/* ***** Map Div ***** */
+.mapFluid{
+  background-color:#152847 !important;
+  color:white !important;
+}
+
+.mapDiv{
+  margin-top:150px;
+  display:flex;
+  flex-direction:column;
+  
+}
+
+.mapSub1{
+  flex:50%;
+}
+
+.mapSub1inner{
+  text-align:center;
+}
+
+.mapSub2{
+  flex:50%;
+}
+
+.mapSub2inner{
+  text-align:center;
+}
+/* ***** End Map Div ***** */
+
+
+
+/* ********** End Homepage Styles ********** */
+
+/* ********** Pricing Page Styles ********** */
+.pricingHeader{
+  font-size:28px !important;
+  
+}
+
+.logoHead{
+  width:2.5em;
+}
+
+.text-body-secondary{
+  font-weight:600;
+}
+
+/* ********** End Pricing Page Styles ********** */
+
+/* Custom Media Queries */    /* ********** Use Bootstrap Media Queries When Possible (At the very bottom) ********** */ 
+/* Custom media query (phones, 478px and down) */
+@media only screen and (max-width: 478px){
+  .nav-anchor{
+    height:163px;
+  }
+}
+/* Custom media query (phones, 479px and up) */
+@media only screen and (min-width: 479px){
+  .nav-anchor{
+    height:123px;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .mapSub1inner{
+      padding-top:35px;
+    }
+
+    .smallMedMap{
+      display:none;
+    }
+
+    .medMap{
+      display:none;
+    }
+
+    .largeMap{
+      display:none;
+    }
+
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+
+    .mapSub1inner{
+      padding-top:35px;
+      padding-left:12%;
+      padding-right:12%;
+    }
+
+    .smallMap{
+      display:none;
+    }
+
+    .medMap{
+      display:none;
+    }
+
+    .largeMap{
+      display:none;
+    }
+  
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .col-12 img{
+      max-height:240px;
+    }
+
+    .plunge1{
+      height:350px;
+    }
+    
+
+  }  
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+
+    .col-12 img{
+      max-height:320px;
+    }
+
+    .mapDiv{
+      flex-direction:row;
+    }
+
+    .mapSub1{             /* >>>>> Perfect Centering (targets mapSub1inner) <<<<< */
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+
+    .mapSub1inner{
+      text-align:left;
+      padding-top:0px;
+      padding-left:15%;
+      padding-right:15%;
+      
+    }
+
+    .mapSub1inner > h4{
+      text-align:left;
+    }
+
+    .medMap{
+      display:none;
+    }
+
+    .smallMedMap{
+      display:block;
+    }
+
+    .hoursDiv{
+      width:30%;
+    }
+
+    td{
+      padding-left:0px !important;
+      padding-bottom:0px !important;
+    }
+
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+
+    .col-12 img{
+      max-height:380px;
+    }
+
+    .smallMedMap{
+      display:none;
+    }
+
+    .medMap{
+      display:block;
+    }
+
+    .mapSub1inner{
+      text-align:left;
+      padding-left:15%;
+      padding-right:15%;
+      
+    }
+  }
+
+  /* Custom for services section (large laptops and desktops, 1400px and up) */
+  @media only screen and (min-width: 1400px){
+    .col-12{
+      margin-top:40px;
+    }
+  }
+
+
+
+  /* Bootstrap Media Queries */
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  
+  
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  /* For desktop:
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  */
+
+  .hero-flex-item-left{
+      flex:58.33%;
+  }
+  
+  .hero-flex-item-right{
+      flex:41.66%;
+  }
+
+  .flex-item-left{
+    flex:50%;
+  }
+  
+  .flex-item-right{
+    flex:50%;
+  }
+
+  .modality-div{
+    padding-left:10px;
+    padding-right:10px;
+  }
+
+  
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .img1{
+    width:90%;
+    float:right;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+  
+}
+
